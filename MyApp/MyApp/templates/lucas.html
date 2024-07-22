@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}@Lucas Pol{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .post:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .post h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .post .read-more {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .post .read-more:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="post">
+            <h2>Blog</h2>
+            <p>The azure waters of the Aegean Sea beckoned me to the picturesque islands of Greece, where time seemed to stand still amidst whitewashed villages and sun-kissed beaches. My journey began in Athens, where the ancient Acropolis loomed over the bustling cityscape—a testament to Greece's rich history and cultural heritage.
+
+                Boarding a ferry to the Cyclades, I arrived on the island of Santorini, renowned for its dramatic cliffs and stunning sunsets. Exploring the labyrinthine streets of Oia, I was captivated by the contrast of blue-domed churches against whitewashed buildings, a scene that epitomized the postcard-perfect beauty of the Greek islands.
+                
+                Days were spent sailing to hidden coves and secluded beaches, where crystal-clear waters invited me to swim and snorkel among vibrant marine life. Each island offered its own charm and character—from the cosmopolitan vibe of Mykonos to the tranquil serenity of Milos, where rugged landscapes and ancient catacombs told stories of a bygone era.
+                
+                Evenings were a celebration of Greek hospitality and culinary delights, with tavernas serving freshly caught seafood and local wines beneath starlit skies. The warmth of the Greek people and their passion for life infused every moment, creating an atmosphere of joy and camaraderie that transcended language barriers.
+                
+                As I watched the sun dip below the horizon from the cliffs of Santorini, painting the sky in shades of pink and gold, I felt a deep sense of peace and contentment. The islands of Greece had offered me not just a vacation but a journey of self-discovery—a reminder of the beauty that exists in simplicity and the power of nature to rejuvenate the spirit.
+                
+                Leaving Greece, I carried with me the echoes of laughter, the taste of olives and feta, and the memories of sun-drenched days spent exploring ancient ruins and hidden treasures. The islands had left an indelible mark on my heart, igniting a lifelong love affair with the magic of travel and the allure of the Mediterranean.</p>
+            <a href="#" class="read-more">@Lucas Pol</a>
+        </div>
+
+</body>
+
+</html>
+
+{% endblock body %}

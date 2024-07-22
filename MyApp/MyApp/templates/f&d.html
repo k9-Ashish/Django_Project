@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Pic{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <!-- Paste image URLs below as shown -->
+        <img src="https://t4.ftcdn.net/jpg/07/10/22/87/240_F_710228787_4hrJUYa3zt3YfZrV7OjtJJSmdi01QudF.jpg" alt="Image 1">
+        <img src="https://t4.ftcdn.net/jpg/08/19/83/87/240_F_819838789_aie4sfTw22ygfVTme5Eo5AgSTc9c8oBI.jpg" alt="Image 2">
+        <img src="https://t4.ftcdn.net/jpg/08/24/26/75/240_F_824267524_gQ7EA9WL7M4U0J702YfGYRZk5LPFctoS.jpg" alt="Image 3">
+        <img src="https://t3.ftcdn.net/jpg/07/33/86/84/240_F_733868469_GGero3LeCDr0OBIhkA3DXhMZEDEHeg4r.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+</body>
+
+</html>
+
+{% endblock body %}

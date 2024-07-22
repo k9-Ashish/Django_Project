@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Photo{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <!-- Paste image URLs below as shown -->
+        <img src="https://t4.ftcdn.net/jpg/07/14/26/79/240_F_714267964_HxmKv2ZUr6TMYuwKLK1R8VPIQ3QXpOmx.jpg" alt="Image 1">
+        <img src="https://t4.ftcdn.net/jpg/07/50/13/79/240_F_750137928_OCYOSRCZHEvEVawYGu12qyAjWx10dt34.jpg" alt="Image 2">
+        <img src="https://t4.ftcdn.net/jpg/07/89/78/93/240_F_789789334_lrrSJ7ycEeyHLddPQVt6BLJqOq415CNe.jpg" alt="Image 3">
+        <img src="https://t4.ftcdn.net/jpg/07/22/96/13/240_F_722961317_NIHybHLczU4rDVePHWjKzzKEJiT4oQmg.jpg" alt="Image 3">
+        <img src="https://t3.ftcdn.net/jpg/07/65/03/82/240_F_765038228_tj0qIhDezsOtuOB9FwHpZPYNquLIYSTX.jpg" alt="Image 3">
+        <img src="https://t4.ftcdn.net/jpg/08/75/80/75/240_F_875807524_7uhrRvpJhYk6L0E1yFKjR6PCYEJd9Hw9.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+</body>
+
+</html>
+
+{% endblock body %}
