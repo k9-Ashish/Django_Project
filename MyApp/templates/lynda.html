@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}@Lynda Parker{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .post:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .post h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .post .read-more {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .post .read-more:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="post">
+            <h2>Blog</h2>
+            <p>Nestled high in the Andes Mountains of Peru, Machu Picchu stands as a testament to the ingenuity and architectural prowess of the ancient Inca civilization. My journey to this mystical site began with a train ride from Cusco, winding through lush valleys and cloud-kissed peaks. Arriving at Aguas Calientes, the gateway to Machu Picchu, I could feel the anticipation building as I embarked on the final leg of my adventure.
+
+                Stepping onto the ancient stone paths of Machu Picchu, I was immediately transported back in time. The city's terraced fields, temples, and residential areas sprawled across the mountainside, offering panoramic views of the Sacred Valley below. It was a surreal experience to walk among the meticulously crafted stone structures, marveling at the precision with which each block was placed centuries ago.
+                
+                As I climbed to the Sun Gate, the highest point in Machu Picchu, the mist lifted to reveal the breathtaking sight of the citadel bathed in golden sunlight. Standing at the edge of the world, I felt a deep connection to the history and spirituality that permeated this sacred site. The sense of awe and wonder that Machu Picchu evoked in me was palpable—a testament to the enduring legacy of the Inca Empire and the resilience of its people.
+                
+                In the evenings, I found solace in the quiet corners of Machu Picchu, reflecting on the profound impact of this journey. The site's mystical energy and serene beauty left an indelible mark on my soul, igniting a passion for exploration and a deeper appreciation for the wonders of our world.
+                
+                Leaving Machu Picchu, I carried with me not just memories of an ancient civilization but a renewed sense of wonder and gratitude for the opportunity to walk in the footsteps of history. The journey to Machu Picchu had awakened a sense of adventure within me—a reminder of the power of exploration to expand our horizons and enrich our lives.</p>
+            <a href="#" class="read-more">@Lynda Parker</a>
+        </div>
+
+</body>
+
+</html>
+
+{% endblock body %}

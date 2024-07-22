@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Your Company Name</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+        background-image: url('https://images.unsplash.com/photo-1574110745453-0f417d9b5023?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2FuZGVybHVzdHxlbnwwfHwwfHx8MA%3D%3D/400x400'); /* Background Image URL */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contact-section {
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        padding: 50px;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        animation: slide-in 0.6s ease forwards;
+    }
+
+    @keyframes slide-in {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+
+    .contact-section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .contact-info p strong {
+        color: #333;
+    }
+
+    .contact-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 20px;
+        animation: fade-in 1s ease forwards;
+    }
+
+    @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+</head>
+<body>
+
+<div class="contact-section bg-grey">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong>Email:</strong> info@WanderLust.com</p>
+        <p><strong>Address:</strong> 123 Street Name, Texas, USA, (65 445)</p>
+        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSzx1O_zGOpv_N8kPAD5nWYY2QG4Cm_oktg&s" alt="Contact Image" class="contact-image">
+</div>
+
+</body>
+</html>
+
+
+
+
+{% endblock body %}
+
+

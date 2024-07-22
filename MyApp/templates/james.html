@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}@James Smith{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .post:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .post h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .post .read-more {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .post .read-more:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="post">
+            <h2>Blog</h2>
+            <p>As the sun dipped low over the sprawling savannah, its golden rays painted the horizon with hues of orange and purple, signaling the end of another remarkable day in the heart of Africa. I found myself mesmerized by the raw beauty of the Serengeti National Park, where nature unfolds its grandeur in every direction you turn.
+
+                My journey to Tanzania began with a sense of curiosity and a desire to immerse myself in the wild landscapes that have enchanted explorers for centuries. Landing in Arusha, a bustling city nestled at the foothills of Mount Meru, I was immediately struck by the vibrant culture and warm hospitality of its people. With each step, the air was alive with the rhythms of Swahili, blending seamlessly with the calls of exotic birds and the distant roar of lions.
+                
+                Venturing into the Serengeti, I embarked on game drives that felt like stepping into a living documentary. The endless plains stretched before me, punctuated by acacia trees that stood like sentinels against the African sky. It was here, amidst the vastness of the savannah, that I witnessed the Great Migration—a breathtaking spectacle of hundreds of thousands of wildebeest and zebra thundering across the plains in search of greener pastures. The sight was awe-inspiring, a reminder of nature's boundless power and resilience.
+                
+                Each day brought new encounters with the Big Five—majestic lions lounging in the shade, graceful giraffes grazing on treetops, and elusive leopards slinking through the tall grass. The thrill of spotting a leopard draped lazily over a tree branch or witnessing a herd of elephants bathing in a muddy watering hole left an indelible mark on my soul.
+                
+                Evenings were spent under a canopy of stars, sharing stories around crackling campfires with fellow travelers from around the globe. The night sky in the Serengeti was a canvas of constellations, a reminder of our place in the universe and the interconnectedness of all life.
+                
+                Beyond the wildlife, Tanzania's rich cultural tapestry unfolded through visits to Maasai villages, where I learned about ancient traditions and the art of beadwork. The Maasai people welcomed me into their homes with open arms, offering insights into their nomadic lifestyle and deep connection to the land.
+                
+                Leaving Tanzania, I carried with me not just memories but a profound sense of gratitude for the opportunity to witness nature in its purest form. The Serengeti had stirred something within me—a reverence for the wild places that remain untamed and a commitment to preserving them for future generations.
+                
+                As I boarded the plane back home, I knew that my journey to Tanzania was more than just a trip—it was a transformative experience that would continue to shape my perspective on the world and my place in it.</p>
+            <a href="#" class="read-more">@James Smith</a>
+        </div>
+
+</body>
+
+</html>
+
+{% endblock body %}

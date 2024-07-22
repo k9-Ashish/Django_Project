@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WanderLust</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .about-image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/" class="active">Back</a>
+        <a href="/contact">Contact</a>
+        <!-- Add more links as needed -->
+    </div>
+
+    <div id="about" class="about-section">
+        <h2>About WanderLust</h2>
+        <p>Welcome to WanderLust, your ultimate guide to exploring the world. We are passionate about travel and
+            adventure, bringing you stories from every corner of the globe. Whether you're planning your next
+            expedition or looking for inspiration, WanderLust is here to ignite your wanderlust and make every journey
+            unforgettable.</p>
+        <img src="https://i.pinimg.com/736x/29/e2/e5/29e2e574517ea639fd0f1fe6f272a7e6.jpg" alt="About WanderLust" class="about-image">
+    </div>
+
+</body>
+
+</html>
+
+{% endblock body %}
