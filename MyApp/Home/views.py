@@ -1,5 +1,7 @@
 from django.shortcuts import render, HttpResponse
-
+from datetime import datetime
+from Home.models import Form
+from django.contrib import messages
 # Create your views here.
 
 def index(request):
@@ -35,3 +37,14 @@ def photo(request):
 
 def pic(request):
     return render(request,'f&d.html')
+
+def form(request):
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        desc = request.POST.get('desc')
+        form = Form(name=name, email=email, phone=phone, desc=desc, date=datetime.today())
+        form.save()
+        messages.success(request, "Your form has been submitted successfully!")
+    return render(request,'form.html')

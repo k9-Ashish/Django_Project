@@ -10,5 +10,6 @@ urlpatterns = [
     path('lynda',views.lynda,name='lynda'),
     path('lucas',views.lucas,name='lucas'),
     path('photo',views.photo,name='photo'),
-    path('pic',views.pic,name='pic')
+    path('pic',views.pic,name='pic'),
+    path('form',views.form,name='form'),
 ]
