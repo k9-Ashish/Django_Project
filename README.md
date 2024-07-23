@@ -21,7 +21,7 @@ and connect with other travelers.**
 
 ### Technologies Used
 
-* **Frontend**: HTML, CSS, JavaScript, Bootstrap
+* **Frontend**: HTML, CSS, JavaScript
   
 * **Backend**: Django (Python web framework)
   
